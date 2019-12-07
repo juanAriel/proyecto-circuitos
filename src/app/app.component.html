@@ -1,0 +1,28 @@
+<!-- <div ngbDropdown display="dynamic"></div>
+<pre>{{LEDS['led']}}</pre>
+<button (click)="onLed()" class="btn btn-primary"
+        tooltip="Cambia estado del LED a ON">
+        LED ON
+</button>
+<button (click)="offLed()" class="btn btn-primary"
+        tooltip="Cambia estado del LED a OFF">
+        LED OFF
+</button> -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">CIRCUITOS-SISTEMAS</a>
+  </nav>
+  <div class="card" style="width: 18rem;">
+      <img src="../assets/images/nature/{{LEDS['LED_STATUS']}}.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Estado LED</h5>
+        <p class="card-text">{{LEDS['LED_STATUS']}}</p>
+        <button (click)="offLed()" class="btn btn-primary"
+          tooltip="Cambia estado del LED a OFF">
+          LED OFF
+        </button>
+        <button (click)="onLed()" class="btn btn-primary"
+          tooltip="Cambia estado del LED a ON">
+          LED ON
+        </button>
+      </div>
+   </div>
